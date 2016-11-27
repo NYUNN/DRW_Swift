@@ -15,12 +15,10 @@
 [![Twitter @GeneDeLisaDev](https://img.shields.io/twitter/follow/GeneDeLisaDev.svg?style=social)](https://twitter.com/GeneDeLisaDev)
 
 
+[ Added two buttons ]
+ - 1. color button
+ - 2. text button
 
-An audio recorder using AVFoundation updated for Swift 3.
-
-This will save recordings in Apple Lossless format. You can change the recording settings to another format if you'd like.
-
-The recordings are shown in a CollectionView. The cells will respond to single taps, double taps, and a long press to play, rename, or delete the sound file.
 
 ## Blog post for this example.
 
