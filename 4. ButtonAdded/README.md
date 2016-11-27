@@ -1,6 +1,6 @@
 # Added Features
 
-[ Added two buttons ]
+[ divided to two buttons ]
  - 1. color button
  - 2. text button
  
@@ -9,8 +9,8 @@
  - Stop Recording
 
 
-## Blog post for this example.
-
+## Issues
+- only one button could be pushed
 
 
 ## Bugs
