@@ -10,9 +10,12 @@
 
 
 ## Issues
-- only one button could be pushed
+- only one button could be pushed (need to be separated)
 
 
 ## Bugs
+ - text align is not working
+ - text blinking
+ - 
 
 
