@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVFoundation Recorder/RecorderViewController.swift"
+            timestampString = "502256892.804522"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "record()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVFoundation Recorder/RecorderViewController.swift"
+            timestampString = "502256892.804522"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
+            landmarkName = "recordWithPermission(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVFoundation Recorder/RecorderViewController.swift"
+            timestampString = "502256892.804522"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
+            landmarkName = "recordWithPermission(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVFoundation Recorder/RecorderViewController.swift"
+            timestampString = "502256892.804522"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
+            landmarkName = "recordWithPermission(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVFoundation Recorder/RecorderViewController.swift"
+            timestampString = "502256892.804522"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "RecorderViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Welcome.RecorderViewController.recordButton.getter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIButton&gt;"
+                  moduleName = "Welcome"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Yuno/1.%20Works/2.%20NYU%20ITP/Fall%202016/5.%20Design%20for%20the%20Real%20World/1.%20drw%20final/swift/5.%20BlinkingWhileRecording/AVFoundation%20Recorder/RecorderViewController.swift"
+                  timestampString = "501999280.767959"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "38">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Welcome.RecorderViewController.recordButton.setter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIButton&gt;"
+                  moduleName = "Welcome"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Yuno/1.%20Works/2.%20NYU%20ITP/Fall%202016/5.%20Design%20for%20the%20Real%20World/1.%20drw%20final/swift/5.%20BlinkingWhileRecording/AVFoundation%20Recorder/RecorderViewController.swift"
+                  timestampString = "501999280.769436"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Welcome.RecorderViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Welcome.RecorderViewController"
+                  moduleName = "Welcome"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Yuno/1.%20Works/2.%20NYU%20ITP/Fall%202016/5.%20Design%20for%20the%20Real%20World/1.%20drw%20final/swift/5.%20BlinkingWhileRecording/AVFoundation%20Recorder/RecorderViewController.swift"
+                  timestampString = "501999280.770707"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Welcome.RecorderViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Welcome.RecorderViewController&gt;"
+                  moduleName = "Welcome"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Yuno/1.%20Works/2.%20NYU%20ITP/Fall%202016/5.%20Design%20for%20the%20Real%20World/1.%20drw%20final/swift/5.%20BlinkingWhileRecording/AVFoundation%20Recorder/RecorderViewController.swift"
+                  timestampString = "501999280.77218"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "141">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVFoundation Recorder/PlayController.swift"
+            timestampString = "502176168.049214"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "PlayController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Welcome.PlayController.recorder.setter : __ObjC.AVAudioRecorder"
+                  moduleName = "Welcome"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Yuno/1.%20Works/2.%20NYU%20ITP/Fall%202016/5.%20Design%20for%20the%20Real%20World/1.%20drw%20final/swift/5.%20BlinkingWhileRecording/AVFoundation%20Recorder/PlayController.swift"
+                  timestampString = "502009592.469193"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Welcome.PlayController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Welcome.PlayController"
+                  moduleName = "Welcome"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Yuno/1.%20Works/2.%20NYU%20ITP/Fall%202016/5.%20Design%20for%20the%20Real%20World/1.%20drw%20final/swift/5.%20BlinkingWhileRecording/AVFoundation%20Recorder/PlayController.swift"
+                  timestampString = "502009592.471568"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "207">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Welcome.PlayController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Welcome.PlayController&gt;"
+                  moduleName = "Welcome"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Yuno/1.%20Works/2.%20NYU%20ITP/Fall%202016/5.%20Design%20for%20the%20Real%20World/1.%20drw%20final/swift/5.%20BlinkingWhileRecording/AVFoundation%20Recorder/PlayController.swift"
+                  timestampString = "502009592.474009"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVFoundation Recorder/PlayController.swift"
+            timestampString = "502176168.049214"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "play()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
