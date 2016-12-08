@@ -17,7 +17,7 @@ Uses AVAudioRecorder to record a sound file and an AVAudioPlayer to play it back
 
 */
 
-class RecorderViewController: UIViewController {
+class RecorderViewController: UIViewController,UITextFieldDelegate {
     
     var recorder: AVAudioRecorder!
     
@@ -26,6 +26,7 @@ class RecorderViewController: UIViewController {
     var audioPlayer = AVAudioPlayer()
     //count
     var count = AVAudioPlayer()
+    
     
     @IBOutlet public var recordButton: UIButton!
     @IBOutlet var playButton: UIButton!
@@ -38,13 +39,7 @@ class RecorderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         record()
-        /*
-        playButton.isEnabled = false
-        setSessionPlayback()
-        askForNotifications()
-        checkHeadphones()
-        */
- 
+
         //audioPlayer
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath:Bundle.main.path(forResource: "h9301", ofType: "mp3")!))
@@ -131,43 +126,20 @@ class RecorderViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
-/*
-    @IBAction func play(_ sender: UIButton) {
-        setSessionPlayback()
-        //play()
-        playButton.setTitle("play", for:UIControlState())
-    }*/
-    /*
-    func play() {
-        
-        var url:URL?
-        if self.recorder != nil {
-            url = self.recorder.url
-        } else {
-            url = self.soundFileURL!
-        }
-        print("playing \(url)")
-        
-        do {
-            self.player = try AVAudioPlayer(contentsOf: url!)
-            player.delegate = self
-            player.prepareToPlay()
-            player.volume = 1.0
-            player.play()
-        } catch let error as NSError {
-            self.player = nil
-            print(error.localizedDescription)
-        }
-    }
-*/
+    
+    @IBOutlet weak var testLabel: UILabel!
+    @IBOutlet weak var testTextField: UITextField!
+    
+    let userDefaults = UserDefaults.standard
+    
     /* recording file */
     
     func setupRecorder() {
+        
         let format = DateFormatter()
         //Customize file name
-        format.dateFormat="yyyy-MM-dd-HH-mm-ss"
-        let currentFileName = "recording-\(format.string(from: Date())).m4a"
-        print(currentFileName)
+        format.dateFormat = "yyyy-MM-dd-HH-mm-ss"
+        var currentFileName = "recording-\(format.string(from: Date())).m4a"
         
         let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         self.soundFileURL = documentsDirectory.appendingPathComponent(currentFileName)
@@ -271,7 +243,7 @@ class RecorderViewController: UIViewController {
             for i in 0 ..< recordings.count {
                 let path = docsDir + "/" + recordings[i]
                 
-                print("removing \(path)")
+                print("removing\(path)")
                 do {
                     try fileManager.removeItem(atPath: path)
                 } catch let error as NSError {
@@ -310,7 +282,6 @@ class RecorderViewController: UIViewController {
     func foreground(_ notification:Notification) {
         print("foreground")
     }
-    
     
     func routeChange(_ notification:Notification) {
         print("routeChange \((notification as NSNotification).userInfo)")

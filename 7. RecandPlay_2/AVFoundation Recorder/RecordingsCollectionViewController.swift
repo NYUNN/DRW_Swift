@@ -24,6 +24,7 @@ class RecordingsCollectionViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
         
         // set the recordings array
+        /* 1 */
         listRecordings()
         
         let recognizer = UILongPressGestureRecognizer(target: self, action: #selector(RecordingsCollectionViewController.longPress(_:)))
@@ -37,6 +38,24 @@ class RecordingsCollectionViewController: UICollectionViewController {
         doubleTap.numberOfTouchesRequired = 1
         doubleTap.delaysTouchesBegan = true
         self.collectionView?.addGestureRecognizer(doubleTap)
+    }
+    
+    //********* FILE NAME **********//
+    func listRecordings() {
+        
+        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        do {
+            let urls = try FileManager.default.contentsOfDirectory(at: documentsDirectory, includingPropertiesForKeys: nil, options: FileManager.DirectoryEnumerationOptions.skipsHiddenFiles)
+            self.recordings = urls.filter( { (name: URL) -> Bool in
+                return name.lastPathComponent.hasSuffix("m4a")
+            })
+            
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        } catch {
+            print("something went wrong listing recordings")
+        }
+        
     }
     
     /**
@@ -63,7 +82,7 @@ class RecordingsCollectionViewController: UICollectionViewController {
         
         let p = rec.location(in: self.collectionView)
         if let indexPath = self.collectionView?.indexPathForItem(at: p) {
-            askToRename((indexPath as NSIndexPath).row)
+           // askToRename((indexPath as NSIndexPath).row)
         }
         
     }
@@ -100,16 +119,19 @@ class RecordingsCollectionViewController: UICollectionViewController {
         return 1
     }
     
-    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.recordings.count
     }
     
+    /************ COLLECTION VIEW *************/
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! RecordingCollectionViewCell
-        
-        cell.label.text = recordings[(indexPath as NSIndexPath).row].lastPathComponent
+
+        // important : indicate file name as number
+        //cell.label.text = recordings[(indexPath as NSIndexPath).row].lastPathComponent
+        cell.label.text = String((indexPath as NSIndexPath).row)
         
         return cell
     }
@@ -131,7 +153,6 @@ class RecordingsCollectionViewController: UICollectionViewController {
         
         //var cell = collectionView.cellForItemAtIndexPath(indexPath)
         play(recordings[(indexPath as NSIndexPath).row])
-
     }
     
     func play(_ url:URL) {
@@ -148,10 +169,7 @@ class RecordingsCollectionViewController: UICollectionViewController {
         } catch {
             print("AVAudioPlayer init failed")
         }
-        
     }
-    
-    
     
     /*
     // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
@@ -164,28 +182,8 @@ class RecordingsCollectionViewController: UICollectionViewController {
     }
     
     func collectionView(collectionView: UICollectionView!, performAction action: String!, forItemAtIndexPath indexPath: NSIndexPath!, withSender sender: AnyObject!) {
-    
     }
     */
-    
-    
-    
-    func listRecordings() {
-        
-        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        do {
-            let urls = try FileManager.default.contentsOfDirectory(at: documentsDirectory, includingPropertiesForKeys: nil, options: FileManager.DirectoryEnumerationOptions.skipsHiddenFiles)
-            self.recordings = urls.filter( { (name: URL) -> Bool in
-                return name.lastPathComponent.hasSuffix("m4a")
-            })
-           
-        } catch let error as NSError {
-            print(error.localizedDescription)
-        } catch {
-            print("something went wrong listing recordings")
-        }
-        
-    }
     
     func askToDelete(_ row:Int) {
         let alert = UIAlertController(title: "Delete",
@@ -200,7 +198,7 @@ class RecordingsCollectionViewController: UICollectionViewController {
         }))
         self.present(alert, animated:true, completion:nil)
     }
-    
+    /*
     func askToRename(_ row:Int) {
         let recording = self.recordings[row]
         
@@ -246,7 +244,7 @@ class RecordingsCollectionViewController: UICollectionViewController {
         })
         
     }
-
+    */
     
     func deleteRecording(_ url:URL) {
         
@@ -273,7 +271,6 @@ class RecordingsCollectionViewController: UICollectionViewController {
 extension RecordingsCollectionViewController: FileManagerDelegate {
 
     func fileManager(_ fileManager: FileManager, shouldMoveItemAt srcURL: URL, to dstURL: URL) -> Bool {
-
         print("should move \(srcURL) to \(dstURL)")
         return true
     }

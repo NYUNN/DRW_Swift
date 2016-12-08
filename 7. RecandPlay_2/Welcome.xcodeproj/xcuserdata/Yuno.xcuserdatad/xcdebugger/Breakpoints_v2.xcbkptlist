@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AVFoundation Recorder/RecorderViewController.swift"
-            timestampString = "502256892.804522"
+            timestampString = "502513530.787618"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "record()"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AVFoundation Recorder/RecorderViewController.swift"
-            timestampString = "502256892.804522"
+            timestampString = "502513530.787618"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "223"
-            endingLineNumber = "223"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
             landmarkName = "recordWithPermission(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AVFoundation Recorder/RecorderViewController.swift"
-            timestampString = "502256892.804522"
+            timestampString = "502513530.787618"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
             landmarkName = "recordWithPermission(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AVFoundation Recorder/RecorderViewController.swift"
-            timestampString = "502256892.804522"
+            timestampString = "502513530.787618"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
             landmarkName = "recordWithPermission(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AVFoundation Recorder/RecorderViewController.swift"
-            timestampString = "502256892.804522"
+            timestampString = "502511850.229685"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "RecorderViewController"
             landmarkType = "3">
             <Locations>
@@ -215,11 +215,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AVFoundation Recorder/PlayController.swift"
-            timestampString = "502176168.049214"
+            timestampString = "502347380.422511"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "play()"
             landmarkType = "7">
          </BreakpointContent>

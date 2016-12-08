@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class PlayController: UIViewController {
+class PlayController: UIViewController, AVAudioPlayerDelegate {
     
     @IBOutlet var playButton: UIButton!
     var player:AVAudioPlayer!
@@ -21,20 +21,49 @@ class PlayController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        playVoice()
         // Do any additional setup after loading the view.
+     
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func play(_ sender: UIButton) {
+    func playVoiceT() {
         setSessionPlayback()
         play()
-        playButton.setTitle("save", for:UIControlState())
+ 
+        
     }
+    
+    func playVoice(){
+        
+        playButton.isEnabled = false
+        let countTimer : Timer = Timer.scheduledTimer(timeInterval:2, target: self, selector: #selector(self.playVoiceT), userInfo: nil, repeats: false)
+        return
+    }
+    
+    @IBAction func play(_ sender: UIButton) {
+    }
+    
+    
+    /*
+     func play(url: NSURL) {
+     let item = AVPlayerItem(URL: url)
+     
+     NSNotificationCenter.defaultCenter().addObserver(self, selector: "playerDidFinishPlaying:", name: AVPlayerItemDidPlayToEndTimeNotification, object: item)
+     
+     let player = AVPlayer(playerItem: item)
+     player.play()
+     }
+     
+     func playerDidFinishPlaying(note: NSNotification) {
+     // Your code here
+     }
+     */
     
     func play() {
         
@@ -44,7 +73,7 @@ class PlayController: UIViewController {
         
         do {
             self.player = try AVAudioPlayer(contentsOf: url!)
-            //player.delegate = self
+            player.delegate = self
             player.prepareToPlay()
             player.volume = 1.0
             player.play()
@@ -52,6 +81,11 @@ class PlayController: UIViewController {
             self.player = nil
             print(error.localizedDescription)
         }
+    }
+    
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        print("ended")
+        playButton.isEnabled = true
     }
     
     func setSessionPlayback() {

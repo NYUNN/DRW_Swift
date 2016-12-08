@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A93B34B11DEBE9F000922015 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B34B01DEBE9F000922015 /* FirstViewController.swift */; };
 		A93B34B51DEC050A00922015 /* PlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B34B41DEC050A00922015 /* PlayController.swift */; };
+		A93C7C211DF393E80096D5CD /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A93C7C1F1DF393E80096D5CD /* Model.xcdatamodeld */; };
 		A991C1C91DDBF64C0042ACE7 /* h9301.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A991C1C81DDBF64C0042ACE7 /* h9301.mp3 */; };
 		A991C1CB1DDC11990042ACE7 /* count.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A991C1CA1DDC11990042ACE7 /* count.mp3 */; };
 		A996980A1DEFD97000539C50 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A99698091DEFD97000539C50 /* Launch Screen.xib */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		A93B34B01DEBE9F000922015 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		A93B34B41DEC050A00922015 /* PlayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayController.swift; sourceTree = "<group>"; };
+		A93C7C201DF393E80096D5CD /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		A991C1C81DDBF64C0042ACE7 /* h9301.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = h9301.mp3; sourceTree = "<group>"; };
 		A991C1CA1DDC11990042ACE7 /* count.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = count.mp3; sourceTree = "<group>"; };
 		A99698091DEFD97000539C50 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "Launch Screen.xib"; path = "AVFoundation Recorder/Launch Screen.xib"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				A93B34B41DEC050A00922015 /* PlayController.swift */,
 				B005192C199BE0F40070659F /* RecordingCollectionViewCell.swift */,
 				B005192A199BDFAC0070659F /* RecordingsCollectionViewController.swift */,
+				A93C7C1F1DF393E80096D5CD /* Model.xcdatamodeld */,
 			);
 			path = "AVFoundation Recorder";
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				A93B34B11DEBE9F000922015 /* FirstViewController.swift in Sources */,
 				A93B34B51DEC050A00922015 /* PlayController.swift in Sources */,
 				B005192B199BDFAC0070659F /* RecordingsCollectionViewController.swift in Sources */,
+				A93C7C211DF393E80096D5CD /* Model.xcdatamodeld in Sources */,
 				B005190A199BDB2E0070659F /* AppDelegate.swift in Sources */,
 				B075BD97199C268800CDA3AB /* RecorderViewController.swift in Sources */,
 				B005192D199BE0F40070659F /* RecordingCollectionViewCell.swift in Sources */,
@@ -491,6 +495,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A93C7C1F1DF393E80096D5CD /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A93C7C201DF393E80096D5CD /* Model.xcdatamodel */,
+			);
+			currentVersion = A93C7C201DF393E80096D5CD /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B00518FC199BDB2E0070659F /* Project object */;
 }
